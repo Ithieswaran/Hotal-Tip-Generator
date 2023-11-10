@@ -1,0 +1,116 @@
+<!--
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tip Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+ <div id="Bil_container">
+   <h2>Bill Total</h2>
+   <div id=bill>
+    <span>$</span>
+   <input type="text" placeholder="0.01">
+   </div>
+ </div>
+  <div >
+    <h2>
+      Tip
+    </h2>
+    <div id="Tip_container">
+      <span>%</span></span>
+      <input type="text" placeholder="10">
+    </div>
+  </div>
+  <div>
+    <h2>
+      people
+    </h2>
+    <div id="people">
+      <button>
+        <span>
+          +
+        </span>
+      </button>
+      <span>1</span>
+      <button>
+      <span>
+        -
+      </span>
+    </div>
+  </div>
+  <div>
+    <h2>
+      Total Per Person
+    </h2>
+    <div id="per_person">
+      <div>$0.00</div>
+  </div>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  <title>Tip Calculator</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <h1 style="text-align: center;">Tip Calculator</h1>
+    <div class="container" id="topContainer">
+      <div class="title">Bill total</div>
+      <div class="inputContainer">
+        <span>$</span>
+        <input type="text" id="billTotalInput" placeholder="0.00" />
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="title">Tip</div>
+      <div class="inputContainer">
+        <span>%</span>
+        <input type="text" id="tipInput" placeholder="10" />
+      </div>
+    </div>
+    <div class="container" id="bottom">
+      <div class="splitContainer">
+        <div class="title">People</div>
+        <div class="controls">
+          <span class="buttonContainer">
+            <button class="splitButton" id="plus_button">
+              <span class="buttonText">+</span>
+            </button>
+          </span>
+          <span class="splitAmount" id="numberOfPeople">1</span>
+          <span class="buttonContainer">
+            <button class="splitButton" id="minus_button">
+              <span class="buttonText">-</span>
+            </button>
+          </span>
+        </div>
+      </div>
+      <div class="totalContainer">
+        <div class="title">Total per Person</div>
+        <div class="total" id="perPersonTotal">$0.00</div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
